@@ -1,0 +1,155 @@
+/* About.css */
+
+.about-page {
+  background: radial-gradient(circle at top left, #0b1430, #050a18 80%);
+  color: #ffffff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+/* Headings */
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff; /* pure white */
+}
+
+.highlight {
+  color: #00aaff;
+  text-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+}
+
+.subtitle {
+  color: #cfd9f9;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+/* Steps section */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.step-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 18px rgba(0, 170, 255, 0.3);
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00aaff;
+}
+
+.step-card h3 {
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.step-card p {
+  color: #e9efff;
+  font-size: 0.95rem;
+}
+
+.step-number {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: linear-gradient(135deg, #0078ff, #00aaff);
+  color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+/* Why Choose section */
+.why-choose {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 18px;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-choose h2 {
+  color: #ffffff;
+}
+
+.reasons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.reason-card {
+  flex: 1 1 250px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.reason-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(0, 170, 255, 0.3);
+}
+
+.reason-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00aaff;
+}
+
+.reason-card h3 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.reason-card p {
+  color: #e4eaff;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reasons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}

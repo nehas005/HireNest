@@ -1,0 +1,141 @@
+/* Background */
+.manageapps-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #091226, #040814 70%);
+  padding: 3rem 2rem;
+  color: #ffffff;
+}
+
+/* Title */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #bfccee;
+  margin-bottom: 2.5rem;
+}
+
+/* Grid */
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.8rem;
+}
+
+/* Card */
+.application-card {
+  padding: 1.6rem;
+  border-radius: 16px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.applied {
+  background: rgba(0, 150, 255, 0.3);
+  color: #4dc6ff;
+}
+
+.status-badge.in-review {
+  background: rgba(255, 200, 0, 0.3);
+  color: #ffd659;
+}
+
+.status-badge.shortlisted {
+  background: rgba(0, 255, 140, 0.3);
+  color: #4dffb0;
+}
+
+.role {
+  margin: 0.8rem 0 0.2rem;
+  font-size: 1rem;
+  color: #c9d7f7;
+}
+
+.skills {
+  color: #d0dcf9;
+  margin-bottom: 1.2rem;
+}
+
+/* Buttons */
+.card-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+/* View Button */
+.btn.view {
+  background: rgba(0, 170, 255, 0.25);
+  color: #00aaff;
+}
+
+.btn.view:hover {
+  background: rgba(0, 170, 255, 0.45);
+}
+
+/* Shortlist Button */
+.btn.shortlist {
+  background: rgba(0, 255, 150, 0.25);
+  color: #00ff99;
+}
+
+.btn.shortlist:hover {
+  background: rgba(0, 255, 150, 0.45);
+}
+
+/* Reject Button */
+.btn.reject {
+  background: rgba(255, 80, 80, 0.25);
+  color: #ff5b5b;
+}
+
+.btn.reject:hover {
+  background: rgba(255, 80, 80, 0.45);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+}

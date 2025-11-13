@@ -1,0 +1,122 @@
+/* PAGE BACKGROUND */
+.interviews-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #091226, #040814 75%);
+  padding: 3rem 2rem;
+  color: #ffffff;
+}
+
+/* HEADER */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #b7c6e8;
+  margin-bottom: 2.5rem;
+}
+
+/* GRID */
+.interview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.8rem;
+}
+
+/* INTERVIEW CARD */
+.interview-card {
+  padding: 1.8rem;
+  border-radius: 16px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(13px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* CARD HEADER */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* STATUS BADGES */
+.status {
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status.scheduled {
+  background: rgba(0, 255, 140, 0.25);
+  color: #00ff9a;
+}
+
+.status.pending {
+  background: rgba(255, 200, 0, 0.25);
+  color: #ffd659;
+}
+
+/* DETAILS */
+.role {
+  margin: 0.9rem 0 0.3rem;
+  color: #cfe0ff;
+}
+
+.datetime {
+  color: #d9e3ff;
+  margin-bottom: 1.4rem;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.65rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+/* EDIT BUTTON */
+.btn.edit {
+  background: rgba(0, 170, 255, 0.3);
+  color: #21b2ff;
+}
+.btn.edit:hover {
+  background: rgba(0, 170, 255, 0.5);
+}
+
+/* CANCEL BUTTON */
+.btn.cancel {
+  background: rgba(255, 80, 80, 0.3);
+  color: #ff6464;
+}
+.btn.cancel:hover {
+  background: rgba(255, 80, 80, 0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .interview-grid {
+    grid-template-columns: 1fr;
+  }
+}

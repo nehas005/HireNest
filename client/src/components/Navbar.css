@@ -1,0 +1,206 @@
+/* ===========================
+   NAVBAR WRAPPER
+=========================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 12, 26, 0.95);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ===========================
+   LEFT — BRAND LOGO
+=========================== */
+.navbar-left .brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.navbar-left .brand span {
+  color: #00aaff !important;
+  text-shadow: 0 0 6px rgba(0, 170, 255, 0.6);
+}
+
+/* ===========================
+   CENTER — NAV LINKS
+=========================== */
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-center ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center li a {
+  color: #e4e8ff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.navbar-center li a:hover {
+  color: #00aaff;
+  transform: translateY(-2px);
+}
+
+/* Active link underline */
+.navbar-center li a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #0078ff, #00aaff);
+  border-radius: 2px;
+}
+
+/* ===========================
+   RIGHT — PROFILE ICON
+=========================== */
+.navbar-right {
+  margin-left: auto;
+}
+
+/* Profile Icon */
+.profile-icon-wrapper {
+  position: relative;
+}
+
+.profile-icon {
+  font-size: 2rem;
+  color: #e4e8ff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.profile-icon:hover {
+  color: #00aaff;
+  text-shadow: 0 0 10px rgba(0, 170, 255, 0.7);
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   DROPDOWN MENU (GLASS)
+=========================== */
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 2.6rem;
+  width: 170px;
+  padding: 0.6rem 0;
+  border-radius: 12px;
+
+  background: rgba(20, 28, 48, 0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  animation: fadeIn 0.2s ease-out;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+}
+
+/* Dropdown items */
+.dropdown a,
+.dropdown button {
+  padding: 0.7rem 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #dce2ff;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* LOGIN link — BLUE */
+.dropdown a {
+  color: #00aaff;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  transition: 0.25s ease;
+}
+
+.dropdown a:hover {
+  background: rgba(0, 170, 255, 0.2);
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.5);
+  border-radius: 6px;
+}
+
+.dropdown a:hover,
+.dropdown button:hover {
+  background: rgba(0, 170, 255, 0.2);
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.4);
+  border-radius: 6px;
+}
+
+/* LOGOUT button text */
+.dropdown button {
+  color: #ff8e8e;
+}
+
+.dropdown button:hover {
+  background: rgba(255, 120, 120, 0.2);
+  color: white;
+}
+
+/* ===========================
+   DROPDOWN ANIMATION
+=========================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   MOBILE STYLES
+=========================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .navbar-center {
+    position: static;
+    transform: none;
+    margin-top: 0.6rem;
+  }
+
+  .navbar-center ul {
+    gap: 1.5rem;
+  }
+}

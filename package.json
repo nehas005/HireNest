@@ -1,0 +1,23 @@
+{
+  "name": "hirenest",
+  "version": "1.0.0",
+  "description": "**HireNest** is a smart and easy-to-use **web platform** designed to connect **early-stage startups** with **skilled individuals or students** looking for exciting ventures and work experiences.",
+  "main": "checkmongo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehas005/HireNest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehas005/HireNest/issues"
+  },
+  "homepage": "https://github.com/nehas005/HireNest#readme",
+  "dependencies": {
+    "mongoose": "^8.19.3"
+  }
+}

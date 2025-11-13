@@ -1,0 +1,127 @@
+/* PAGE BACKGROUND */
+.shortlist-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #091226, #040814 75%);
+  padding: 3rem 2rem;
+  color: #ffffff;
+}
+
+/* HEADERS */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #b7c6e8;
+  margin-bottom: 2.5rem;
+}
+
+/* GRID */
+.shortlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.8rem;
+}
+
+/* CARD */
+.candidate-card {
+  padding: 1.8rem;
+  border-radius: 16px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* CARD HEADER */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+/* STATUS BADGE */
+.badge {
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Shortlisted Badge */
+.badge.shortlisted {
+  background: rgba(0, 255, 150, 0.25);
+  color: #00ff99;
+}
+
+.role {
+  margin: 0.9rem 0 0.3rem;
+  color: #cfe0ff;
+}
+
+.skills {
+  color: #d9e3ff;
+  margin-bottom: 1.4rem;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.65rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+/* VIEW BUTTON */
+.btn.view {
+  background: rgba(0, 170, 255, 0.3);
+  color: #21b2ff;
+}
+.btn.view:hover {
+  background: rgba(0, 170, 255, 0.5);
+}
+
+/* SCHEDULE BUTTON */
+.btn.schedule {
+  background: rgba(0, 255, 140, 0.3);
+  color: #00ff9a;
+}
+.btn.schedule:hover {
+  background: rgba(0, 255, 140, 0.5);
+}
+
+/* REMOVE BUTTON */
+.btn.remove {
+  background: rgba(255, 80, 80, 0.3);
+  color: #ff6464;
+}
+.btn.remove:hover {
+  background: rgba(255, 80, 80, 0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .shortlist-grid {
+    grid-template-columns: 1fr;
+  }
+}

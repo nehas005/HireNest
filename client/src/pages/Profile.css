@@ -1,0 +1,143 @@
+/* Page Background */
+.profile-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #091226, #040814 70%);
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main Container */
+.profile-container {
+  width: 100%;
+  max-width: 950px;
+}
+
+/* Header */
+.profile-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.avatar {
+  font-size: 4.5rem;
+  color: #00aaff;
+  text-shadow: 0 0 15px rgba(0, 170, 255, 0.6);
+}
+
+.profile-header h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0.6rem 0 0.2rem;
+}
+
+.company {
+  color: #b3c2e0;
+  font-size: 1rem;
+}
+
+/* Glass Card */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.8rem;
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Profile Card */
+.profile-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.profile-card-title h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.edit-btn {
+  background: linear-gradient(90deg, #0078ff, #00aaff);
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+  transition: all 0.2s ease;
+}
+
+.edit-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Profile Info Rows */
+.info-row {
+  margin-bottom: 1.3rem;
+}
+
+.info-row label {
+  color: #cdd7f0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.info-row p,
+.info-row a {
+  color: #e8edff;
+  font-size: 1rem;
+}
+
+.info-row input,
+.info-row textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  outline: none;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+/* Stats Grid */
+.stats-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.6rem;
+  border-radius: 12px;
+}
+
+.stat-card h4 {
+  color: #cdd7f0;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number {
+  color: #00aaff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(0, 170, 255, 0.7);
+}
