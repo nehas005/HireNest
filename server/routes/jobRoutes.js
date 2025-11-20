@@ -19,4 +19,20 @@ router.get("/all", async (req, res) => {
   res.json(jobs);
 });
 
+// DELETE JOB BY ID
+router.delete("/delete/:id", async (req, res) => {
+  try {
+    const job = await Job.findByIdAndDelete(req.params.id);
+
+    if (!job) {
+      return res.status(404).json({ error: "Job not found" });
+    }
+
+    res.json({ message: "Job deleted successfully" });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to delete job" });
+  }
+});
+
+
 export default router;

@@ -141,3 +141,79 @@
     font-size: 2.2rem;
   }
 }
+
+/* Jobs Section */
+.jobs-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+}
+
+.jobs-section h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.no-jobs {
+  text-align: center;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+/* JobCard styling override */
+.job-card {
+  padding: 1.2rem;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 0 12px rgba(0, 153, 255, 0.2);
+  transition: 0.25s;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 18px rgba(0, 153, 255, 0.4);
+}
+
+.job-card h3 {
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.job-card p {
+  margin: 0;
+  color: #b5c0d6;
+}
+
+.job-card span {
+  color: #66ccff;
+  font-size: 0.9rem;
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #0084ff, #005fcc);
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #0094ff, #006cff);
+  transform: translateY(-2px);
+}
+
+.delete-btn:active {
+  transform: scale(0.96);
+}
